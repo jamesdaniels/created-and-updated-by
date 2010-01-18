@@ -5,8 +5,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "created-and-updated-by"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{Preforms magic on created_by_id and updated_by_id fields}
+    gem.description = %Q{This gem extends ActiveRecord::Base causing created_by_id and updated_by_id attributes to be set magicly with about 30 LOC}
     gem.email = "james@jamesdaniels.net"
     gem.homepage = "http://github.com/jamesdaniels/created-and-updated-by"
     gem.authors = ["James Daniels"]
