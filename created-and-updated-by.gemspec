@@ -5,12 +5,12 @@
 
 Gem::Specification.new do |s|
   s.name = %q{created-and-updated-by}
-  s.version = "0.0.0"
+  s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["James Daniels"]
   s.date = %q{2010-01-18}
-  s.description = %q{This gem extends ActiveRecord::Base causing created_by_id and updated_by_id attributes to be set magicly with about 30 LOC}
+  s.description = %q{This gem extends ActiveRecord::Base causing created_by_id and updated_by_id attributes to be set magically with about 30 LOC}
   s.email = %q{james@jamesdaniels.net}
   s.extra_rdoc_files = [
     "LICENSE",
