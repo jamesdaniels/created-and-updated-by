@@ -23,6 +23,7 @@ Gem::Specification.new do |s|
      "README.rdoc",
      "Rakefile",
      "VERSION",
+     "created-and-updated-by.gemspec",
      "lib/created-and-updated-by.rb",
      "spec/created-and-updated-by_spec.rb",
      "spec/spec.opts",
