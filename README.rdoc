@@ -1,6 +1,21 @@
 = created-and-updated-by
 
-Description goes here.
+This gem extends ActiveRecord::Base causing created_by_id and updated_by_id attributes to be set magically with about 30 LOC
+
+Create an initializer with CreatedAndUpdatedBy::Stamper.attach
+This will automatically update created_by_id and updated_by_id by creating a belongs_to association and populating the fields with the values from User.current_user, you can change the Class or class_attribute that populates these fields using the optional params for attach: attach(model, attribute)
+
+E.g, CreatedAndUpdatedBy::Stamper.attach(Account, :logged_in)
+
+For classes the do not have a created_by_id or updated_by_id, the created_by and updated_by associations will return nil.
+
+created-and-updated-by differentiates itself from others like it by attempting to be an extremely simple yet configurable implementation with about 30 LOC.
+
+== Todo
+
+* Clean things up a little more
+* Add tests
+* Check Rails 3.0 compatibility
 
 == Note on Patches/Pull Requests
  
