@@ -26,6 +26,10 @@ Gem::Specification.new do |s|
      "created-and-updated-by.gemspec",
      "lib/created-and-updated-by.rb",
      "spec/created-and-updated-by_spec.rb",
+     "spec/db/database.yml",
+     "spec/db/models.rb",
+     "spec/db/schema.rb",
+     "spec/db/test.sqlite3",
      "spec/spec.opts",
      "spec/spec_helper.rb"
   ]
