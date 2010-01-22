@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{created-and-updated-by}
-  s.version = "0.1.1"
+  s.version = "0.1.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["James Daniels"]
-  s.date = %q{2010-01-18}
+  s.date = %q{2010-01-21}
   s.description = %q{This gem extends ActiveRecord::Base causing created_by_id and updated_by_id attributes to be set magically with about 30 LOC}
   s.email = %q{james@jamesdaniels.net}
   s.extra_rdoc_files = [
@@ -36,6 +36,8 @@ Gem::Specification.new do |s|
   s.summary = %q{Preforms magic on created_by_id and updated_by_id fields}
   s.test_files = [
     "spec/created-and-updated-by_spec.rb",
+     "spec/db/models.rb",
+     "spec/db/schema.rb",
      "spec/spec_helper.rb"
   ]
 
@@ -45,11 +47,17 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
       s.add_development_dependency(%q<rspec>, [">= 1.2.9"])
+      s.add_development_dependency(%q<activerecord>, [">= 0"])
+      s.add_development_dependency(%q<activesupport>, [">= 0"])
     else
       s.add_dependency(%q<rspec>, [">= 1.2.9"])
+      s.add_dependency(%q<activerecord>, [">= 0"])
+      s.add_dependency(%q<activesupport>, [">= 0"])
     end
   else
     s.add_dependency(%q<rspec>, [">= 1.2.9"])
+    s.add_dependency(%q<activerecord>, [">= 0"])
+    s.add_dependency(%q<activesupport>, [">= 0"])
   end
 end
 
