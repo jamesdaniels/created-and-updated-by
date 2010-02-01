@@ -25,7 +25,7 @@ module CreatedAndUpdatedBy
 		def set_stamps
 			if stamper && stamper.respond_to?(:id) && respond_to?(:created_by_id) && respond_to?(:updated_by_id)
 				self.created_by_id = stamper.id if new_record?
-				self.updated_by_id = stamper.id
+				self.updated_by_id = stamper.id if changed?
 			end
 		end
 	end

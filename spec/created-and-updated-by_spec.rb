@@ -24,6 +24,8 @@ describe WithCreated do
 		User.current = User.first
 		created = WithCreated.create!
 		User.current = User.last
+		created.save!
+		created.updated_by_id.should == User.first.id
 		created.something = 'blah blah something else'
 		created.save!
 		created.created_by_id.should == User.first.id
